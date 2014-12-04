@@ -10,7 +10,7 @@ function KeySequence (sequence, action) {
 				self.found = 0;
 			}
 		} else
-				self.found = 0;
+			self.found = 0;
 	}
 
 	this.setSequence = function(sequence) {
