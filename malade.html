@@ -9,7 +9,7 @@
 <script src="js/keySequence.js"></script>
 <script>
 	$(document).ready(function() {
-		var ks = new KeySequence (["a", "Up", "e"], function() {
+		new KeySequence ([65, 38, 69], function() {
 			$("body").addClass("malade");
 		});
 	});

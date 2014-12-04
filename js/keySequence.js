@@ -28,6 +28,6 @@ function KeySequence (sequence, action) {
 	self.setSequence(sequence);
 
 	$("body").keydown(function(e) {
-		self.registerKeyPress(e.key);
+		self.registerKeyPress(e.keyCode);
 	});
 }
