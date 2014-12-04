@@ -9,7 +9,8 @@ function KeySequence (sequence, action) {
 				self.action();
 				self.found = 0;
 			}
-		}
+		} else
+				self.found = 0;
 	}
 
 	this.setSequence = function(sequence) {
@@ -22,7 +23,7 @@ function KeySequence (sequence, action) {
 
     var sequence;
     var found;
-	
+
 	//------------------------------ INIT ------------------------------
 	self.setSequence(sequence);
 
