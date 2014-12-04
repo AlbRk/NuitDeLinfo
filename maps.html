@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<script src="js/jquery.min.js"></script>
+<script src="js/keySequence.js"></script>
+<script src="js/maps.js"></script>
+<style>
+html, body, #map-canvas {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+}
+</style>
+
+<script>
+    var map;
+    function initialize() {
+        map = new google.maps.Map(document.getElementById('map-canvas'), {
+            zoom: 8,
+            center: new google.maps.LatLng(-34.397, 150.644)
+        });
+        new google.maps.Marker({
+            position: new google.maps.LatLng(-25.363882,131.044922),
+            map: map,
+            title: 'Camp'
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<div id="map-canvas"></div>
