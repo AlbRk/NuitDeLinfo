@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<style>
+	.malade {
+		transition:background-color 2s;
+		background-color: red;
+	}
+</style>
+<script src="jquery.min.js"></script>
+<script src="keySequence.js"></script>
+<script>
+	$(document).ready(function() {
+		var ks = new KeySequence (["a", "Up", "e"], function() {
+			$("body").addClass("malade");
+		});
+	});
+</script>
