@@ -1,13 +1,20 @@
-<?php
-    $heure = date('h:i');
-    $fwav = "tmp/vps-$heure.wav";
-    if (! file_exists($fwav))
-        exec ("espeak -vfr 'La base virale VPS a été mise à jour à $heure' -w $fwav");
-?>
-
 <!DOCTYPE html>
 <meta charset="utf-8">
+<script src="js/jquery.min.js"></script>
+<script src="js/keySequence.js"></script>
 <script>
-    var audio = new Audio("<?php echo $fwav; ?>");
-    audio.play();
+$(document).ready(function() {
+    new KeySequence ([65, 38, 69], function() {
+        $.ajax({
+            url:"gen_vps.php",
+            cache:false,
+            success:function(txt) {
+                var audio = new Audio(txt);
+                audio.play();
+            }
+        });
+
+    });
+});
 </script>
+
