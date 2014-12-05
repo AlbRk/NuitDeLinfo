@@ -193,3 +193,8 @@ input {
 #inscription a {
 	text-decoration:underline;
 }
+
+#map-canvas {
+	width:100%;
+	height:100%;
+}

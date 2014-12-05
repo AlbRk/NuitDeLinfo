@@ -5,7 +5,6 @@
 <?php
 	require ('templates/header.php');
 ?>
-
 <script>
     var map;
     function initialize() {
@@ -56,13 +55,14 @@
 </script>
 
 	<div id="wrap">
+	
 		<div id="gauche">
 		
 			<div id="event"><span class="entypo-bell"></span>- nom catastrophe -</div>
 			
 			<div id="map">
 				<div id="titre"><span class="entypo-location"></span>carte</div>
-				<div id="map-canvas" style="width:100%; height:100%;"></div>
+				<div id="map-canvas"></div>
 			</div>
 			
 			<div id="infos">
@@ -85,5 +85,3 @@
 		</div>
 		
 	</div>
-
-

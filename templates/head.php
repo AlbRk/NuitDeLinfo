@@ -20,10 +20,10 @@ class Cnx {
 <meta  charset="utf-8" />
 <title><?php echo $title ?></title>
 
-<link rel="StyleSheet" href="/Soft_qui_peut/css/style.css"/>
-<link rel="stylesheet" href="/Soft_qui_peut/css/jquery-ui.min.css">
+<link rel="StyleSheet" href="/Soft_qui_peut/site/css/style.css"/>
+<link rel="stylesheet" href="/Soft_qui_peut/site/css/jquery-ui.min.css">
 
-<script src="/Soft_qui_peut/js/jquery.min.js"></script>
-<script src="/Soft_qui_peut/js/jquery-ui.min.js"></script>
-<script src="/Soft_qui_peut/js/keySequence.js"></script>
-<script src="/Soft_qui_peut/js/menu.js"></script>
+<script src="/Soft_qui_peut/site/js/jquery.min.js"></script>
+<script src="/Soft_qui_peut/site/js/jquery-ui.min.js"></script>
+<script src="/Soft_qui_peut/site/js/keySequence.js"></script>
+<script src="/Soft_qui_peut/site/js/menu.js"></script>
