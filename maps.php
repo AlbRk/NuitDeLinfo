@@ -1,4 +1,4 @@
-<?php require ('php/cnx.class.php'); ?>
+<?php $title = "map"; require ('templates/head.php'); ?>
 <!DOCTYPE html>
 <script src="js/jquery.min.js"></script>
 <script src="js/keySequence.js"></script>
