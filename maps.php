@@ -18,6 +18,11 @@ html, body, #map-canvas {
             zoom: 4,
             center: new google.maps.LatLng(37.3451, 97.3814)
         });
+		if(navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(function(position) {
+				map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+			});
+		}
 
         <?php    // Ajout des marqueurs des établissements
             $select = Cnx::get()->query("SELECT e.etablissement_nom, t.type_libelle, c.coordonnees_lat, c.coordonnees_long
